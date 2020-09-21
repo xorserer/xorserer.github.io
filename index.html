@@ -1,1 +1,25 @@
-Hello World
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SteamAuth</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+<form class="form-signin">
+    <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <label for="inputSecret" class="sr-only">Steam secret</label>
+    <input type="password" id="inputSecret" class="form-control" placeholder="Steam secret" required autofocus oninput="onSecretChanged()">
+    <button class="btn btn-lg btn-primary btn-block" type="button" id="otpButton" onclick="otpButtonClicked()">-----</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+</form>
+<script src="js/main.js"></script>
+</body>
+</html>
